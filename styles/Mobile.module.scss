@@ -1,0 +1,14 @@
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: white;
+    animation: .5s ease-in-out both running slidein;
+}
+
+@keyframes slidein {
+    from { transform: translateY(-100%); }
+    to   { transform: translateY(0); }
+  }
