@@ -8,7 +8,7 @@ import Cta from "./Cta"
 
 export default function Navbar() {
     return (
-        <div className="navbar bg-base-100 px-6 lg:px-12 sticky top-0 border-b">
+        <div className="navbar bg-base-100 px-6 lg:px-12 sticky top-0 border-b z-20">
             <div className="flex-1">
                 <Link href="/" className="text-xl flex items-center gap-6 font-bold z-20 ">
                     <Image

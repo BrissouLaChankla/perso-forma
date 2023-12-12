@@ -16,7 +16,7 @@ export default function TextMorph() {
     }, []);
 
     return (
-      <span style={{fontSize:"14vw"}} className='absolute opacity-10 font-bold z-0 overflow-hidden'>
+      <span style={{fontSize:"14vw"}} className='absolute opacity-10 font-bold z-0'>
         <TextTransition springConfig={presets.default}>{TEXTS[index % TEXTS.length]}</TextTransition>
       </span>
 
