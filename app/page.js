@@ -1,5 +1,8 @@
 import TextMorph from '@/components/TextMorph'
 import Image from 'next/image'
+import Cta from '@/components/Menu/Cta'
+import ReviewsMansonry from '@/components/Section/ReviewsMansonry'
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-8 md:p-12">
@@ -14,10 +17,16 @@ export default function Home() {
         Apprenez les Bases <br />du Développement Web 
       </h1>
       <p className='mt-6 md:mt-12 opacity-60 text-2xl'>Vous allez démarrer une formation pour devenir développeur web mais vous redoutez le challenge ? <br /> Que ce soit études supérieure ou Bootcamp, voyons ça ensemble.</p>
+      <div className="flex gap-x-2 mt-8">
+        <button className="btn btn-outline btn-lg">Mes cours</button>
+        <Cta className="btn-lg" />
+      </div>
       {/* <p className='mt-12 opacity-60 text-2xl'>Apprenez à faire un site internet sans avoir l'impression qu'on vous parle 中国人 <br /> Cours puis exercices, on va à l'essentiel</p> */}
+      
       <TextMorph />
       </div>
      
+     <ReviewsMansonry />
     </main>
   )
 }
