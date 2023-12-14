@@ -13,9 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className={`overflow-x-hidden ${inter.className}`}>
-       <Navbar />
-        {children}
-        </body>
+        <Navbar />
+        <main className="min-h-screen p-8 md:p-12 max-w-screen-xl m-auto ">
+          {children}
+        </main>
+      </body>
     </html>
   )
 }

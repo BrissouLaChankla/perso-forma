@@ -1,3 +1,10 @@
 @tailwind base;
+
+@layer components {
+    h1 {
+      @apply text-3xl font-bold leading-tight lg:leading-tight sm:leading-tight md:leading-tight sm:text-4xl md:text-5xl lg:text-6xl tracking-tight
+    }
+  }
+
 @tailwind components;
 @tailwind utilities;
