@@ -32,8 +32,8 @@ export default function Navbar() {
                             </ul>
                         </details>
                     </li>
-                    <li><Link href="">A propos</Link></li>
-                    <li><Link href="">Contact</Link></li>
+                    <li><Link href="/about">A propos</Link></li>
+                    <li><Link href="/contact">Contact</Link></li>
 
                 </ul>
                <Cta />

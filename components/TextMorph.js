@@ -3,7 +3,7 @@
 import TextTransition, { presets } from 'react-text-transition';
 import { useState, useEffect } from 'react';
 export default function TextMorph() {
-    const TEXTS = ['Formateur', 'Développeur', 'Freelance', 'Magicien'];
+    const TEXTS = ['Formateur', 'Développeur', 'Freelance', 'Mentor', 'Magicien'];
 
     const [index, setIndex] = useState(0);
 
