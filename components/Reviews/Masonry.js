@@ -20,9 +20,9 @@ function Review({ picture, name, note, message, date }) {
   const lastname = words.join('')[0] || "X";
 
   return (
-    <div className='bg-gray-100 rounded-lg p-6 mb-4 break-inside-avoid-column'>
+    <div className='bg-stone-100 rounded-lg p-6 mb-4 break-inside-avoid-column'>
       <div className='flex items-center gap-2'>
-        <Image width={40} height={40} src={picture} alt={`Photo de profil de ${name}`} />
+        <Image width={34} height={34} src={picture} alt={`Photo de profil de ${name}`} />
         <span className='capitalize font-medium'>{firstname + " " + lastname}.</span>
       </div>
       <div className="flex mt-3">
@@ -32,7 +32,7 @@ function Review({ picture, name, note, message, date }) {
         }
       </div>
       <div className="py-3">
-        <p className='opacity-80 line-clamp-8'>{message}</p>
+        <p className='ine-clamp-8 text-sm'>{message}</p>
       </div>
       <small className='opacity-60'>{date}</small>
     </div>

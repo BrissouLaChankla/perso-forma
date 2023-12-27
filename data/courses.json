@@ -1,39 +1,41 @@
-
 [
     {
-        "title":"L'essentiel d'HTML, CSS & Javascript",
-        "slug":"essentiel", 
-        "illu":"essentiel.png",
-        "description":"Découvrez les bases cruciales de ces langages en un temps record. <strong> Aucune expérience préalable requise</strong>.<br /> Des leçons pratiques, des exercices interactifs et un support personnalisé vous attendent.", 
-        "isNew": true, 
+        "title": "Les bases de la programmation",
+        "slug": "fondamentaux-programmation",
+        "illu": "/assets/courses/temp.jpg",
+        "presentation_vid":"https://www.youtube.com/embed/K35qAXqjUR4",
+        "description": "Apprenez les bases essentielles de la programmation, y compris les variables, les types de données, et les structures de contrôle. Idéal pour les débutants.",
+        "short_desc":"Apprenez les concepts clés de la programmation web",
+        "isNew": true,
         "price": 49,
-        "cta":"Découvrir le cours",
-        "icons": [
-            {
-                "name":"HTML",
-                "path":"/assets/icons/html.svg"
-            },
-            {
-                "name":"CSS",
-                "path":"/assets/icons/css.svg"
-            },
-            {
-                "name":"Javascript",
-                "path":"/assets/icons/js.svg"
-            }
-        ]
+        "promo": 19,
+        "cta": "Commencez à apprendre maintenant",
+        "icons": ["path/to/icon1.jpg", "path/to/icon2.jpg"]
     },
     {
-        "title": "Accompagnement premium 🚀",
-        "slug":"essentiel", 
-        "illu":"accompagnement.svg",
-        "description": "Le succès dans un bootcamp de développement web peut être un défi en solitaire. Bénéficiez d'un soutien pédagogique personnalisé, de réponses à vos questions et nous pourrons refaire ensemble les exercices sur lesquels vous butez.",
+        "title": "Langages de Programmation de Base",
+        "slug": "langages-programmation-base",
+        "illu": "/assets/courses/temp.jpg",
+        "presentation_vid":"https://www.youtube.com/embed/K35qAXqjUR4",
+        "description": "Découvrez les langages fondamentaux du développement web, notamment HTML, CSS et JavaScript, et commencez à construire vos propres sites web.",
+        "short_desc":"Maîtrisez HTML, CSS, JavaScript pour construire vos premiers sites",
+        "isNew": false,
+        "price": 49,
+        "promo": 19,
+        "cta": "Explorer le cours",
+        "icons": ["path/to/icon3.jpg", "path/to/icon4.jpg"]
+    },
+    {
+        "title": "Outils de Développement",
+        "slug": "outils-developpement",
+        "illu": "/assets/courses/temp.jpg",
+        "presentation_vid":"https://www.youtube.com/embed/K35qAXqjUR4",
+        "description": "Maîtrisez les outils essentiels de tout développeur web, y compris Git, GitHub et les environnements de développement intégrés (IDEs).",
+        "short_desc":"Dominez Git, GitHub et IDEs, outils essentiels des développeurs web.",
         "isNew": true,
-        "price": 299,
-        "cta":"Découvrir l'offre",
-        "icons": [
-        
-        ]
+        "price": 49,
+        "promo": null,
+        "cta": "Découvrir les outils",
+        "icons": ["path/to/icon5.jpg", "path/to/icon6.jpg"]
     }
-    
 ]

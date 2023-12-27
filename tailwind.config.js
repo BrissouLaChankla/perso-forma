@@ -13,6 +13,22 @@ module.exports = {
       lineClamp: {
         8: '8',
       },
+      maxWidth: {
+        'screen-xl': '1140px', // Personnalisation de max-w-screen-xl
+      },
+      animation: {
+        marquee: "marquee 100s linear infinite"
+      },
+      keyframes: {
+        marquee: {
+          from: {
+            transform: 'translateX(0)',
+          },
+          to: {
+            transform: 'translateX(calc(-100% - 2.5rem))',
+          },
+        },
+      },
     },
   },
   daisyui: {

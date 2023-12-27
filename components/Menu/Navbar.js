@@ -22,21 +22,29 @@ export default function Navbar() {
             </div>
             <div className="flex-none hidden lg:flex">
                 <ul className="menu menu-horizontal gap-4 text-base me-4 font-medium">
-                    <li>
+                    {/* <li>
                         <details>
                             <summary>
-                                Mes cours
+                                Mes offres
                             </summary>
                             <ul className="p-2 bg-base-100 w-64 rounded-t-none">
                                 <DropCourses />
                             </ul>
                         </details>
+                    </li> */}
+                    <li className="dropdown dropdown-hover">
+                        <div tabIndex={0} role="button">Mes offres 
+                        <Image src="/assets/icons/chevron.svg" alt="chevron bas" className="rotate-90 opacity-80" width={12} height={12}/>
+                        </div>
+                        <ul tabIndex={0} className="ms-0 dropdown-content z-50 menu p-2 shadow bg-base-100 rounded-box w-72">
+                            <DropCourses />
+                        </ul>
                     </li>
-                    <li><Link href="/about">A propos</Link></li>
-                    <li><Link href="/contact">Contact</Link></li>
 
+                    <li><Link href="/a-propos">A propos</Link></li>
+                    <li><Link href="/contact">Contact</Link></li>
                 </ul>
-               <Cta />
+                <Cta />
 
             </div>
             <Mobile />

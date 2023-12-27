@@ -8,17 +8,17 @@ export default function DropCourses() {
     return (
         <>
             <li>
-                <Link href="">
+                <Link className="text-base opacity-90" href="">
                     <Image
                         width={20}
                         src={All}
                         alt="Icon all"
                         className="me-2"
                     />
-                    Tous mes cours</Link>
+                    Mes ressources gratuits</Link>
             </li>
             <li>
-                <Link href="">
+                <Link className="text-base opacity-90" href="">
                     <Image
                         width={20}
                         src={Premium}
@@ -29,14 +29,14 @@ export default function DropCourses() {
                 </Link>
             </li>
             <li>
-                <Link href="">
+                <Link className="text-base opacity-90" href="">
                     <Image
                         width={20}
                         src={Free}
                         alt="Icon free"
                         className="me-2"
                     />
-                    Mes cours gratuits
+                    Mes offres premium
                 </Link>
             </li>
         </>

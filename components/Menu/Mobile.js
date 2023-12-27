@@ -50,13 +50,13 @@ function MenuOpen() {
     <div className={`lg:hidden ${styles.menu}`}>
       <ul className="menu rounded-box text-xl gap-6 font-medium w-full flex flex-col mt-28">
         <li>
-          <Link href="/about">A propos</Link>
+          <Link href="/a-propos">A propos</Link>
         </li>
         <li>
           <Link href="/contact">Contact</Link>
         </li>
 
-        <h2 class="ms-4 mt-8 uppercase text-sm font-light">Mes cours</h2>
+        <h2 className="ms-4 mt-8 uppercase text-sm font-light">Mes offres</h2>
         <DropCourses />
         <Cta />
       </ul>

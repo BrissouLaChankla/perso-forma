@@ -1,0 +1,22 @@
+
+[
+    {
+        "title":"Préparation Bootcamp",
+        "slug":"essentiel", 
+        "illu":"essentiel.png",
+        "description":"Découvrez les bases cruciales de ces langages en un temps record. <strong> Aucune expérience préalable requise</strong>.<br /> Des leçons pratiques, des exercices interactifs et un support personnalisé vous attendent.", 
+        "isNew": true, 
+        "price": 299,
+        "cta":"Découvrir l'offre"
+    },
+    {
+        "title": "Accompagnement premium 🚀",
+        "slug":"essentiel", 
+        "illu":"accompagnement.svg",
+        "description": "Le succès dans un bootcamp de développement web peut être un défi en solitaire. Bénéficiez d'un soutien pédagogique personnalisé, de réponses à vos questions et nous pourrons refaire ensemble les exercices sur lesquels vous butez.",
+        "isNew": true,
+        "price": 299,
+        "cta":"Découvrir l'offre"
+    }
+    
+]
