@@ -4,7 +4,7 @@ import TitleSub from '../TitleSub';
 import path from 'path';
 
 export default async function Marquee() {
-     const reviewssPath = path.join(process.cwd(), 'data', 'reviews.json');
+     const reviewssPath = path.join(process.cwd(), 'data', 'allreviews.json');
 
     const file = await fs.readFile(reviewssPath, 'utf8');
     const reviewsData = JSON.parse(file);
