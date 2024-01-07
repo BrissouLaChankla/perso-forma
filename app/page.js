@@ -11,12 +11,12 @@ import Course from '@/components/Products/Course'
 
 
 export default async function Home() {
-  const coursesPath = path.join(process.cwd(), 'data', 'courses.json');
   const offersPath = path.join(process.cwd(), 'data', 'offers.json');
   const offersFetch = await fs.readFile(offersPath, 'utf8');
   const offersData = JSON.parse(offersFetch);
   const offers = offersData.map((el, i) => <BigProduct key={i} {...el} />)
   
+  const coursesPath = path.join(process.cwd(), 'data', 'courses.json');
   const coursesFetch = await fs.readFile(coursesPath, 'utf8');
   const coursesData = JSON.parse(coursesFetch);
   const courses = coursesData.map((el, i) => <Course key={i} {...el} />)

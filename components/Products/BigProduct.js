@@ -17,7 +17,7 @@ export default function BigProduct({ title, description, isNew, price, slug, cta
                 <p className="md:text-xl opacity-90 text-base" dangerouslySetInnerHTML={createMarkup()}></p>
                 <span className="my-4 text-xl font-bold">{price}€</span>
                 <div className="card-actions items-center gap-4 justify-center md:justify-start">
-                    <Link href={`/cours/${slug}`} className="btn btn-neutral w-full md:w-60 text-white text-base">{cta}</Link>
+                    <Link href={`/pack/${slug}`} className="btn btn-neutral w-full md:w-60 text-white text-base">{cta}</Link>
                 </div>
             </div>
             <figure className="lg:w-4/12 relative">

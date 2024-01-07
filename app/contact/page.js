@@ -13,7 +13,7 @@ export default function Contact() {
 
             <div className="flex gap-10 mt-16">
 
-                <Card title="Me contacter" text="Si vous avez des questions ou si vous avez besoin d'aide, n'hésitez pas à m'envoyer un petit message sur LinkedIn ou par mail, c'est toujours un plaisir de discuter." cta="Me contacter" />
+                <Card title="Discuter" text="Si vous avez des questions ou si vous avez besoin d'aide, n'hésitez pas à m'envoyer un petit message sur LinkedIn ou par mail, c'est toujours un plaisir de discuter." cta="Me contacter" />
 
                 <Card title="Devenir partenaire" text="Si vous êtes un Bootcamp ou une école, je serais ravi de proposer mes services à vos futurs élèves. Offrez leurs un accès à mes cours et mon accompagnement pour augmenter votre taux de réussite et soulager vos intervenants." cta="Devenir partenaire" slug="devenir-partenaire" />
 
