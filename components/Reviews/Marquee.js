@@ -1,9 +1,12 @@
 import { promises as fs } from 'fs';
 import Image from 'next/image';
 import TitleSub from '../TitleSub';
+import path from 'path';
 
 export default async function Marquee() {
-    const file = await fs.readFile(process.cwd() + '/data/allreviews.json', 'utf8');
+     const reviewssPath = path.join(process.cwd(), 'data', 'reviews.json');
+
+    const file = await fs.readFile(reviewssPath, 'utf8');
     const reviewsData = JSON.parse(file);
     const reviews = reviewsData.map((el, i) => <Review key={i} {...el} />)
     return (
