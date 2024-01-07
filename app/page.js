@@ -4,17 +4,20 @@ import Cta from '@/components/Menu/Cta'
 import Global from '@/components/Reviews/Global'
 import BigProduct from '@/components/Products/BigProduct'
 import { promises as fs } from 'fs';
+import path from 'path';
 import ReviewsMansonry from '@/components/Reviews/Masonry'
 import TitleSub from '@/components/TitleSub';
 import Course from '@/components/Products/Course'
 
 
 export default async function Home() {
-  const offersFetch = await fs.readFile(process.cwd() + '/data/offers.json', 'utf8');
+  const coursesPath = path.join(process.cwd(), 'data', 'courses.json');
+  const offersPath = path.join(process.cwd(), 'data', 'offers.json');
+  const offersFetch = await fs.readFile(offersPath, 'utf8');
   const offersData = JSON.parse(offersFetch);
   const offers = offersData.map((el, i) => <BigProduct key={i} {...el} />)
   
-  const coursesFetch = await fs.readFile(process.cwd() + '/data/courses.json', 'utf8');
+  const coursesFetch = await fs.readFile(coursesPath, 'utf8');
   const coursesData = JSON.parse(coursesFetch);
   const courses = coursesData.map((el, i) => <Course key={i} {...el} />)
 
@@ -51,11 +54,11 @@ export default async function Home() {
         {offers}
       </div>
       
-        <TitleSub title="Préparer sa formation de développeur" sub="Retrouvez l'essentiel qui vous permettra de démarrer votre formation dans les bonnes conditions." />
-      <div className='mt-8 flex gap-8 max-w-5xl m-auto'>
+        <TitleSub title="Préparer sa formation de développeur" sub="Retrouvez l'essentiel qui vous permettra de démarrer votre formation dans les meilleures conditions" />
+      <div className='flex flex-col sm:flex-row gap-8 m-auto'>
         {courses}
       </div>
-      <TitleSub title="Témoigages clients" sub="C'est un plaisir de vous aider, merci à tout ceux qui prennent le temps de témoigner ❤️" />
+      <TitleSub title="Témoignages clients" sub="C'est un plaisir de vous aider, merci à tout ceux qui prennent le temps de témoigner ❤️" />
       <ReviewsMansonry />
       </>
   )

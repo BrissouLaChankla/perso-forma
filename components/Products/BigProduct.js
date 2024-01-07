@@ -8,7 +8,7 @@ export default function BigProduct({ title, description, isNew, price, slug, cta
 
     return (
         <div className="card lg:card-side bg-stone-50 hover:shadow-md hover:-translate-y-0.5 ps-2 pt-2 md:ps-8 md:pt-8 transition duration-200 ">
-            <div className="card-body lg:w-8/12 mb-6">
+            <div className="card-body p-4  lg:w-8/12 mb-6">
                 {
                     isNew &&
                     <div className="badge badge-error text-white p-4 font-bold uppercase md:text-sm badge-sm md:badge-lg">Nouveau</div>

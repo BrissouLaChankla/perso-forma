@@ -7,27 +7,31 @@ export default async function Marquee() {
     const reviewsData = JSON.parse(file);
     const reviews = reviewsData.map((el, i) => <Review key={i} {...el} />)
     return (
-        <div className='w-screen relative'>
-
-            <TitleSub title="Témoigages clients" sub="C'est un plaisir de vous aider, merci à tout ceux qui prennent le temps de témoigner ❤️" />
-            <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
-            <div className="relative flex gap-10 overflow-hidden">
-                <div className="animate-marquee pb-5 flex min-w-full shrink-0 items-center justify-around gap-10">
-                    {reviews.slice(0, 10)}
+        <div className=' flex flex-col items-center md:mt-24 '>
+            <div className='w-screen relative' style={{backgroundImage: 'linear-gradient(to bottom, white, rgba(255, 255, 255, 0) 15%)'}}>
+                <div className='mt-10'> 
+                <TitleSub title="Témoignages clients" sub="C'est un plaisir de vous aider, merci à tout ceux qui prennent le temps de témoigner ❤️" />
                 </div>
-                <div aria-hidden="true" className="animate-marquee flex min-w-full shrink-0 items-center justify-around gap-10">
-                    {reviews.slice(0, 10)}
+                <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                <div className="relative flex gap-10 overflow-hidden">
+                    <div className="animate-marquee pb-5 flex min-w-full shrink-0 items-center justify-around gap-10">
+                        {reviews.slice(0, 10)}
+                    </div>
+                    <div aria-hidden="true" className="animate-marquee flex min-w-full shrink-0 items-center justify-around gap-10">
+                        {reviews.slice(0, 10)}
+                    </div>
+                </div>
+
+                <div className="relative  flex  overflow-hidden -mt-4 ">
+                    <div className="animate-marquee py-5 flex min-w-full shrink-0 items-center justify-around gap-10 [animation-direction:reverse] me-10">
+                        {reviews.slice(10, 21)}
+                    </div>
+                    <div aria-hidden="true" className="animate-marquee flex min-w-full shrink-0 items-center justify-around gap-10 [animation-direction:reverse]">
+                        {reviews.slice(10, 21)}
+                    </div>
                 </div>
             </div>
 
-            <div className="relative  flex  overflow-hidden -mt-4 ">
-                <div className="animate-marquee py-5 flex min-w-full shrink-0 items-center justify-around gap-10 [animation-direction:reverse] me-10">
-                    {reviews.slice(10, 21)}
-                </div>
-                <div aria-hidden="true" className="animate-marquee flex min-w-full shrink-0 items-center justify-around gap-10 [animation-direction:reverse]">
-                    {reviews.slice(10, 21)}
-                </div>
-            </div>
         </div>
     )
 }

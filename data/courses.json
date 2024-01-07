@@ -10,6 +10,23 @@
         "price": 49,
         "promo": 19,
         "cta": "Commencez à apprendre maintenant",
+        "learnings": [
+            {
+                "icon":"",
+                "title":"Dynamique et Fonctions",
+                "description":"Plongez dans la logique de programmation avec cette section avancée. Vous maîtriserez les Boucles, Conditions & Opérateurs Logiques pour contrôler le flux et la logique de vos programmes, permettant des calculs complexes et des décisions dynamiques. Ensuite, vous apprendrez à modulariser et réutiliser le code efficacement à travers Les Fonctions, un outil puissant pour écrire du code propre, compréhensible et efficace. Cette section vous préparera à créer des programmes interactifs et fonctionnels."
+            },
+            {
+                "icon":"",
+                "title":"Fondations et Structures",
+                "description":"Cette section couvre les éléments de base nécessaires pour comprendre et écrire des programmes. Vous commencerez par apprendre les Types de données & Variables, essentiels pour stocker et manipuler des informations. Puis, vous explorerez les Tableaux & Objets, qui sont cruciaux pour organiser des données et structurer des programmes plus complexes. Cette partie jette les bases solides nécessaires à toute progression en programmation."
+            },
+            {
+                "icon":"",
+                "title":"Les bases de Git",
+                "description":"Découvrez comment utiliser Git, l'outil de contrôle de version indispensable pour les développeurs. Apprenez à suivre et à gérer les modifications de votre code, à collaborer avec d'autres, et à maintenir l'intégrité de vos projets à travers des commandes fondamentales. Ce cours vous fournira les compétences essentielles pour initier, suivre et sauvegarder vos projets efficacement avec Git."
+            }
+        ],  
         "icons": ["path/to/icon1.jpg", "path/to/icon2.jpg"]
     },
     {
@@ -23,6 +40,23 @@
         "price": 49,
         "promo": 19,
         "cta": "Explorer le cours",
+        "learnings": [
+            {
+                "icon":"",
+                "title":"Dynamique et Fonctions du Code",
+                "description":"Plongez dans la logique de programmation avec cette section avancée. Vous maîtriserez les Boucles, Conditions & Opérateurs Logiques pour contrôler le flux et la logique de vos programmes, permettant des calculs complexes et des décisions dynamiques. Ensuite, vous apprendrez à modulariser et réutiliser le code efficacement à travers Les Fonctions, un outil puissant pour écrire du code propre, compréhensible et efficace. Cette section vous préparera à créer des programmes interactifs et fonctionnels."
+            },
+            {
+                "icon":"",
+                "title":"Fondations et Structures",
+                "description":"Cette section couvre les éléments de base nécessaires pour comprendre et écrire des programmes. Vous commencerez par apprendre les Types de données & Variables, essentiels pour stocker et manipuler des informations. Puis, vous explorerez les Tableaux & Objets, qui sont cruciaux pour organiser des données et structurer des programmes plus complexes. Cette partie jette les bases solides nécessaires à toute progression en programmation."
+            },
+            {
+                "icon":"",
+                "title":"Les bases de Git",
+                "description":"Découvrez comment utiliser Git, l'outil de contrôle de version indispensable pour les développeurs. Apprenez à suivre et à gérer les modifications de votre code, à collaborer avec d'autres, et à maintenir l'intégrité de vos projets à travers des commandes fondamentales. Ce cours vous fournira les compétences essentielles pour initier, suivre et sauvegarder vos projets efficacement avec Git."
+            }
+        ],  
         "icons": ["path/to/icon3.jpg", "path/to/icon4.jpg"]
     },
     {
@@ -36,6 +70,27 @@
         "price": 49,
         "promo": null,
         "cta": "Découvrir les outils",
+        "learnings": [
+            {
+                "icon":"structure.svg",
+                "illu":"/assets/courses/structure.png",
+                "title":"Fondations et Structures",
+                "description":"Cette section couvre les éléments de base nécessaires pour comprendre et écrire des programmes. Vous commencerez par apprendre les <strong>Types de données & Variables</strong>, essentiels pour stocker et manipuler des informations.<br /><br /> Puis, vous explorerez les <strong>Tableaux & Objets</strong>, qui sont cruciaux pour organiser des données et structurer des programmes plus complexes. Cette partie jette les bases solides nécessaires à toute progression en programmation."
+            },
+            {
+                "icon":"function.svg",
+                "illu":"/assets/courses/functions.png",
+                "title":"Dynamique et Fonctions",
+                "description":"Plongez dans la logique de programmation avec cette section avancée. Vous maîtriserez les <strong>Boucles, Conditions & Opérateurs Logiques</strong> pour contrôler le flux et la logique de vos programmes, permettant des calculs complexes et des décisions dynamiques. <br /><br /> Ensuite, vous apprendrez à modulariser et réutiliser le code efficacement à travers <strong>Les Fonctions</strong>, un outil puissant pour écrire du code propre, compréhensible et efficace. Cette section vous préparera à créer des programmes interactifs et fonctionnels."
+            },
+           
+            {
+                "icon":"git.svg",
+                "illu":"/assets/courses/git.png",
+                "title":"Les bases de Git",
+                "description":"Découvrez comment utiliser Git, l'outil de contrôle de version indispensable pour les développeurs. Apprenez à suivre et à gérer les modifications de votre code, à collaborer avec d'autres, et à maintenir l'intégrité de vos projets à travers des commandes fondamentales."
+            }
+        ],  
         "icons": ["path/to/icon5.jpg", "path/to/icon6.jpg"]
     }
 ]

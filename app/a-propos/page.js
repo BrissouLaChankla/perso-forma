@@ -4,7 +4,7 @@ import Marquee from "@/components/Reviews/Marquee"
 
 export default function About() {
   return (
-    <div>
+    <>
       <div className="bg-stone-50 rounded-3xl pt-4 px-8 pt-8 lg:px-16 flex flex-col lg:flex-row w-full lg:mt-6 m-auto items-center overflow-hidden">
         <div className="lg:w-3/5 lg:mb-12">
           <h1 className="mb-6 tracking-tight">A propos</h1>
@@ -30,7 +30,6 @@ export default function About() {
         </div>
       </div>
 
-      <div>
         <h2 className="lg:w-1/2 text-4xl mt-28 font-extrabold leading-normal">
           J'aide les futurs Développeurs Web à mieux préparer leur Formation
         </h2>
@@ -61,9 +60,10 @@ export default function About() {
           </div>
         </div>
         <Faq />
+     
         <Marquee />
-      </div>
+        
 
-    </div>
+    </>
   )
 }

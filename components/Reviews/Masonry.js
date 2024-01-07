@@ -7,7 +7,7 @@ export default async function ReviewsMansonry() {
   const reviews = reviewsData.map((el, i) => <Review key={i} {...el} />)
 
   return (
-      <div className="gap-4 columns-3xs ">
+      <div className="gap-4 columns-3xs">
         {reviews}
       </div>
   )
@@ -26,7 +26,6 @@ function Review({ picture, name, note, message, date }) {
         <span className='capitalize font-medium'>{firstname + " " + lastname}.</span>
       </div>
       <div className="flex mt-3">
-
         {
           [...Array(note)].map((e, i) => <span key={i} className="mask mask-star-2 bg-yellow-400 w-5 h-5"></span>)
         }

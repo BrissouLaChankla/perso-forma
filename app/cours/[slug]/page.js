@@ -1,23 +1,26 @@
 import YouTubeVideo from '@/components/Products/YoutubeVideo';
 import Global from '@/components/Reviews/Global';
 import TitleSub from '@/components/TitleSub';
-import Image from 'next/image';
 import Link from 'next/link';
 import { promises as fs } from 'fs';
+import path from 'path';
 import PriceBanner from '@/components/Products/PriceBanner';
 import ForWho from '@/components/Products/ForWho';
 import Signature from '@/components/Products/Signature';
 import Marquee from '@/components/Reviews/Marquee';
 import Course from '@/components/Products/Course';
+import LearnBox from '@/components/Products/LearnBox';
 
 export default async function CoursePage({ params }) {
-  const coursesFetch = await fs.readFile(process.cwd() + '/data/courses.json', 'utf8');
+  const filePath = path.join(process.cwd(), 'data', 'courses.json');
+  const coursesFetch = await fs.readFile(filePath, 'utf8');
   const coursesData = JSON.parse(coursesFetch);
   const course = coursesData.find(course => course.slug === params?.slug);
   const otherCourses = coursesData.flatMap((el, i) => el.slug === params.slug ? [] : <Course key={i} {...el} />)
+  const learnings = course.learnings.map((el, i) => <LearnBox key={i} index={i} {...el} />)
 
   if (!course) {
-    return null; 
+    return null;
   }
 
   const { title, description, presentation_vid, price, promo } = course;
@@ -50,32 +53,8 @@ export default async function CoursePage({ params }) {
 
         <TitleSub title="Ce que vous allez apprendre durant cette formation" sub="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus commodi sed, aliq." />
 
-        <div className='flex gap-8 w-5/6'>
-          <div className="border h-80 w-1/3 items-center justify-center rounded-lg transition  duration-2000 ease-in-out hover:shadow-md hover:-translate-y-1 overflow-hidden p-6 text-left">
-            <Image src="/assets/icons/premium.svg" height={50} width={50} />
-            <div className='mt-6'>
-
-              <h3 className="font-bold">Vous allez apprendre ça</h3>
-              <p className="my-3 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita doloremque excepturi maiores ad voluptatibus modi iste nam distinctio! Quibusdam quam fuga perspiciatis quidem molestias autem nam ipsum ab asperiores!</p>
-            </div>
-          </div>
-          <div className="border h-80 w-1/3 items-center justify-center rounded-lg transition  duration-2000 ease-in-out hover:shadow-md hover:-translate-y-1 overflow-hidden p-6 text-left">
-            <Image src="/assets/icons/premium.svg" height={50} width={50} />
-            <div className='mt-6'>
-
-              <h3 className="font-bold">Vous allez apprendre ça</h3>
-              <p className="my-3 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita doloremque excepturi maiores ad voluptatibus modi iste nam distinctio! Quibusdam quam fuga perspiciatis quidem molestias autem nam ipsum ab asperiores!</p>
-            </div>
-          </div>
-          <div className="border h-80 w-1/3 items-center justify-center rounded-lg transition  duration-2000 ease-in-out hover:shadow-md hover:-translate-y-1 overflow-hidden p-6 text-left">
-            <Image src="/assets/icons/premium.svg" height={50} width={50} />
-            <div className='mt-6'>
-
-              <h3 className="font-bold">Vous allez apprendre ça</h3>
-              <p className="my-3 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla expedita doloremque excepturi maiores ad voluptatibus modi iste nam distinctio! Quibusdam quam fuga perspiciatis quidem molestias autem nam ipsum ab asperiores!</p>
-            </div>
-          </div>
-
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 w-11/12'>
+          {learnings}
         </div>
 
         <PriceBanner />
@@ -83,12 +62,12 @@ export default async function CoursePage({ params }) {
 
 
         <Signature />
-        <TitleSub title="Mes autres cours" sub="Si ce cours ne vous convient pas, je suis sûr qu'un de ceux là vous correspondra mieux." />
-        <div className="flex items-center justify-center gap-8">
-        {otherCourses}
+        <TitleSub title="Jetez un œil à mes autres cours" sub="Ils sont essentiels pour maîtriser les bases de la programmation web" />
+        <div className="flex justify-center gap-3 md:gap-6">
+          {otherCourses}
         </div>
-        <Marquee />
       </div>
+        <Marquee />
     </>
 
   )
