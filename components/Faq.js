@@ -30,7 +30,7 @@ export default function Faq() {
 
     const tabs = data.map((el, i) => {
         return (
-            <div className="collapse collapse-arrow join-item border border-base-300 bg-white">
+            <div className="collapse collapse-arrow join-item border border-base-300 bg-white" key={i}>
                 <input type="radio"
                     value={`option${i}`}
                     name="myRadioGroup"

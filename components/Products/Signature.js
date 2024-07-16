@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Signature() {
   return (
-    <div className="w-full flex-col md:flex-row flex gap-4 mt-28 items-center justify-center">
+    <div className="w-full max-w-screen-xl flex-col md:flex-row flex gap-4 mt-28 items-center justify-center">
       <div className="">
         <Image src="/assets/logo.svg" width={200} height={200} className="w-40" />
       </div>

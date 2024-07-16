@@ -56,7 +56,7 @@ function MenuOpen() {
           <Link href="/contact">Contact</Link>
         </li>
 
-        <h2 className="ms-4 mt-8 uppercase text-sm font-light">Mes offres</h2>
+        <h2 className="ms-4 mt-8 uppercase text-sm font-light">Mes cours</h2>
         <DropCourses />
         <Cta />
       </ul>

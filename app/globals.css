@@ -1,24 +1,40 @@
 @tailwind base;
 
 @layer components {
-    h1 {
-      @apply text-4xl md:text-6xl font-bold leading-tight lg:leading-tight sm:leading-tight md:leading-tight sm:text-4xl md:text-5xl lg:text-6xl tracking-tight
-    }
-    h2 {
-      @apply text-4xl font-bold mb-6
-    }
-    h3 {
-      @apply text-xl font-bold mt-4
-    }
-    p {
-      @apply text-base text-stone-700 max-w-3xl
-    }
+  h1 {
+    @apply text-4xl font-bold leading-tight lg:leading-tight sm:leading-tight md:leading-tight sm:text-4xl md:text-5xl lg:text-6xl tracking-tight
+  }
+
+  h2 {
+    @apply text-[40px] font-bold mb-4 tracking-tight leading-tight
+  }
+
+  h3 {
+    @apply text-xl font-bold
+  }
+
+  p {
+    @apply text-base text-stone-500
+  }
+
+  .section {
+    @apply max-w-screen-lg m-auto px-3 pt-12
   }
 
 
-  html {
-    scroll-behavior: smooth;
-  }
+}
+
+.xfade {
+  /* padding: 0 30px; */
+  mask-image: linear-gradient(to right, transparent 8px, rgb(255 255 255 / 70) 64px, #fff 50%, rgb(255 255 255 / 70) calc(100% - 64px), transparent calc(100% - 8px));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 
 @tailwind components;
 @tailwind utilities;

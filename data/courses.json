@@ -1,9 +1,10 @@
 [
     {
         "title": "Les bases de la programmation",
-        "slug": "fondamentaux-programmation",
+        "slug": "les-bases-de-la-programmation",
         "illu": "/assets/courses/temp.jpg",
         "presentation_vid":"https://www.youtube.com/embed/K35qAXqjUR4",
+        "paymentLink":"https://buy.stripe.com/fZebKobAffH915C289",
         "description": "Apprenez les bases essentielles de la programmation, y compris les variables, les types de données, et les structures de contrôle. Idéal pour les débutants.",
         "short_desc":"Apprenez les concepts clés de la programmation web",
         "isNew": true,
@@ -31,7 +32,7 @@
     },
     {
         "title": "Langages de Programmation de Base",
-        "slug": "langages-programmation-base",
+        "slug": "langages-de-programmation-de-base",
         "illu": "/assets/courses/temp.jpg",
         "presentation_vid":"https://www.youtube.com/embed/K35qAXqjUR4",
         "description": "Découvrez les langages fondamentaux du développement web, notamment HTML, CSS et JavaScript, et commencez à construire vos propres sites web.",
@@ -61,7 +62,7 @@
     },
     {
         "title": "Outils de Développement",
-        "slug": "outils-developpement",
+        "slug": "outils-de-developpement",
         "illu": "/assets/courses/temp.jpg",
         "presentation_vid":"https://www.youtube.com/embed/K35qAXqjUR4",
         "description": "Maîtrisez les outils essentiels de tout développeur web, y compris Git, GitHub et les environnements de développement intégrés (IDEs).",

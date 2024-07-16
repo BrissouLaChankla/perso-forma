@@ -3,9 +3,9 @@ import TitleSub from "../TitleSub";
 export default function ForWho() {
 
     return (
-        <div>
-            <TitleSub title="A qui s'adresse cette formation ?" sub="This comprehensive template has everything you need to streamline your operations and take your business to the next level." />
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+        <div className="max-w-screen-lg">
+            <TitleSub title="A qui s'adresse cette formation ?" sub="A tous ceux préparent leur rentrée en école ou en Bootcamp de développement web, mais aussi à ceux qui veulent (ré)apprendre les bases du code !" />
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left mt-14">
                 <div className="lg:border-r-2 ">
                     <div className="text-4xl">
                         👨‍💻

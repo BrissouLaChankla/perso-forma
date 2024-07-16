@@ -19,9 +19,9 @@ export default function LearnBox({ icon, title, description, index, illu }) {
             </div>
 
             <dialog id={`learning_modal_${index}`} className="modal">
-                <div className="modal-box text-left max-w-5xl w-2/3 grid grid-cols-4 gap-6 ">
-                    <div className="col-span-1 relative h-64">
-                    <Image src={illu} layout="fill" objectFit="cover" />
+                <div className="modal-box text-left max-w-5xl w-2/3 grid grid-cols-4 gap-6 flex items-center">
+                    <div className="col-span-1 relative h-full">
+                    <Image src={illu} fill style={{objectFit:"cover"}} />
                     </div>
                     <div className="col-span-3">
 

@@ -9,12 +9,11 @@ export default async function ReviewsMansonry() {
   const reviews = reviewsData.map((el, i) => <Review key={i} {...el} />)
 
   return (
-      <div className="gap-4 columns-3xs">
-        {reviews}
-      </div>
+    <div className="gap-4 columns-3xs">
+      {reviews}
+    </div>
   )
 }
-
 
 function Review({ picture, name, note, message, date }) {
   let words = name.split(' ');
@@ -22,7 +21,7 @@ function Review({ picture, name, note, message, date }) {
   const lastname = words.join('')[0] || "X";
 
   return (
-    <div className='bg-stone-100 rounded-lg p-6 mb-4 break-inside-avoid-column'>
+    <div className='bg-stone-100 rounded-lg p-6 mb-4 break-inside-avoid-column '>
       <div className='flex items-center gap-2'>
         <Image width={34} height={34} src={picture} alt={`Photo de profil de ${name}`} />
         <span className='capitalize font-medium'>{firstname + " " + lastname}.</span>
